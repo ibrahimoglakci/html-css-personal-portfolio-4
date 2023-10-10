@@ -1,0 +1,12 @@
+Options -Indexes
+
+
+RewriteEngine On
+RewriteBase /port/404
+RewriteRule ^/port/404 index.html [L,NC]
+
+
+
+ErrorDocument 404 ./port/404/index.html
+
+ErrorDocument 403 ./port/403/index.html
